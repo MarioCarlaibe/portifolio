@@ -1,17 +1,3 @@
-/* <button id="copyButton">
-  <i class="fas fa-copy"></i> Copiar
-</button>
-<input type="text" id="textToCopy" value="Texto a ser copiado" readonly>
-
-<script>
-  document.getElementById("copyButton").addEventListener("click", function () {
-    const textToCopy = document.getElementById("textToCopy");
-    textToCopy.select();
-    document.execCommand("copy");
-    alert("Texto copiado!");
-  });
-</script> */
-
 const itemsSkills = document.querySelectorAll(".item")
 
 itemsSkills.forEach(function (item) {
@@ -24,4 +10,13 @@ itemsSkills.forEach(function (item) {
     }
   })
 })
-
+document.getElementById("copy-email").addEventListener("click", function () {
+  const textToCopy = 'mariocarlaibe@hotmail.com'
+  navigator.clipboard.writeText(textToCopy)
+  alert("E-mail Copiado!")
+})
+document.getElementById("copy-phone").addEventListener("click", function () {
+  const textToCopy = '+551699375-0372'
+  navigator.clipboard.writeText(textToCopy)
+  alert("Telefone Copiado!")
+})

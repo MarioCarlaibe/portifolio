@@ -85,6 +85,9 @@
     main .about article div{
         width: 350px;
     }
+    main .about article div h3{
+        text-align: center;
+    }
     main .about{
         height: 1020px;
     }
@@ -145,6 +148,7 @@
     main .about article div{
         width: 300px;
         margin-top: 40px;
+        text-align: center;
     }
     main .works{
         flex-direction: column;

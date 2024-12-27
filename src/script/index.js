@@ -16,7 +16,7 @@ document.getElementById("copy-email").addEventListener("click", function () {
   alert("E-mail Copiado!")
 })
 document.getElementById("copy-phone").addEventListener("click", function () {
-  const textToCopy = '+551699375-0372'
+  const textToCopy = '+5516993750372'
   navigator.clipboard.writeText(textToCopy)
   alert("Telefone Copiado!")
 })

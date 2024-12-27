@@ -17,7 +17,15 @@ main{
     height: 70px;
     padding: 0 100px;
 }
-.header h2{
+.header div{
+    display: flex;
+    align-items: center;
+}
+.header div img{
+    width: 24px;
+    height: 24px;
+}
+.header div h2{
     padding: 0 30px;
     font-size: 30px;
     font-weight: bold;
@@ -27,6 +35,7 @@ main{
     height: 560px;
     display: flex;
     justify-content: space-around;
+    padding: 50px 40px 0 0;
     align-items: center;
 }
 .container article{
@@ -78,7 +87,7 @@ main{
 .container img{
     width: 280px;
     height: 320px;
-    box-shadow: 40px 40px 0 -10px var(--Gray-200);
+    box-shadow: 35px 35px 0 -10px var(--Gray-200);
     border: 8px solid var(--Gray-Default);
     transform: translateY(-50px);
 }
@@ -119,7 +128,9 @@ main{
     line-height: 1.4;
 }
 .about article img{
-    box-shadow: -40px 40px 0 -10px var(--Gray-200);
+    margin: 50px;
+    width: 400px;
+    box-shadow: -35px 35px 0 -10px var(--Gray-200);
     border: 8px solid var(--Gray-50);
 }
 .pc-phone{

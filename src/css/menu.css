@@ -6,14 +6,15 @@
     font-weight: 500;
     padding: 10px 20px;
     border-radius: 50px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 .header nav ul li a:hover{
-    color: var(--Gray-900);
+    color: var(--Gray-100);
+    background-color: var(--Gray-600);
 }
 .header .download:hover{
-    color: var(--Gray-50);
-    background-color: var(--Gray-500);
+    color: var(--Gray-900);
+    background-color: var(--Gray-300);
 }
 .header .menu{
     display: none;

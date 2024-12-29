@@ -6,6 +6,7 @@ body{
     background-color: var(--Gray-Default);
     display: flex;
     justify-content: center;
+    overflow-x: hidden;
 }
 main{
     width: 1440px;
@@ -21,9 +22,19 @@ main{
     display: flex;
     align-items: center;
 }
-.header div img{
-    width: 24px;
-    height: 24px;
+.header div a i{
+    font-size: 24px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.header div a i:hover{
+    background-color: var(--Gray-600);
+    color: var(--Gray-100);
 }
 .header div h2{
     padding: 0 30px;
@@ -65,7 +76,7 @@ main{
 }
 .container .location:hover{
     color: var(--Gray-100);
-    background-color: var(--Gray-700);
+    background-color: var(--Gray-600);
 }
 .container .links{
     display: flex;
@@ -82,7 +93,7 @@ main{
 }
 .container .links i:hover{
     color: var(--Gray-100);
-    background-color: var(--Gray-700);
+    background-color: var(--Gray-600);
 }
 .container img{
     width: 280px;
@@ -176,6 +187,25 @@ main{
     width: 80px;
     margin: 0 10px;
 }
+.works .work{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.works .work-left{
+    opacity: 0;
+    transform: translateX(-300px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+.works .work-right{
+    opacity: 0;
+    transform: translateX(300px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+.works .work.show{
+    opacity: 1;
+    transform: translateY(0);
+}
 .works .work-1{
     background-color: var(--Gray-100);
 }
@@ -209,9 +239,10 @@ main{
     align-items: center;
     justify-content: space-between;
     padding: 20px 40px;
-    gap: 20px;
     border-radius: 10px;
     text-align: center;
+    transition: 0.5s;
+    cursor: pointer;
 }
 .skills .item i{
     font-size: 40px;
@@ -222,10 +253,16 @@ main{
     width: 80%;
 }
 .skills .item p{
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease, margin 0.5s ease;
+    
 }
 .skills .item.ativo p{
-    display: block;
+    max-height: 240px;
+    opacity: 1;
+    margin: 20px 0;
 }
 .skills h2{
     margin-bottom: 30px;
@@ -283,8 +320,8 @@ main{
     transition: 0.5s;
 }
 .contact .links i:hover, .email a:hover{
-    color: var(--Gray-100);
-    background-color: var(--Gray-700);
+    color: var(--Gray-50);
+    background-color: var(--Gray-600);
 }
 .directs{
     display: flex;

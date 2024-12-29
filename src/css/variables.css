@@ -11,5 +11,19 @@
     --Gray-100: #1f2937;
     --Gray-50: #111827;
     --Gray-Default: #030712;
-    --Emerald: #10b981;
+}
+
+[data-theme="dark"]{
+    --Gray-Default: #ffffff;
+    --Gray-50: #f9fafb;
+    --Gray-100: #f3f4f6;
+    --Gray-200: #e5e7eb;
+    --Gray-300: #d1d5db;
+    --Gray-400: #9ca3af;
+    --Gray-500: #6b7280;
+    --Gray-600: #4b5563;
+    --Gray-700: #374151;
+    --Gray-800: #1f2937;
+    --Gray-900: #111827;
+    --Gray-950: #030712;
 }

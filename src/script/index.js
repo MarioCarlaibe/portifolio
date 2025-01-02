@@ -39,14 +39,15 @@ handleScroll()
 
 const toggleTheme = () => {
   const html = document.documentElement;
+  const iconTheme = document.querySelector('.icon-theme')
   
-  // Alterna entre os temas claro e escuro
   if (html.getAttribute('data-theme') === 'dark') {
     html.setAttribute('data-theme', 'light');
+    iconTheme.innerHTML = `<i class="fa-regular fa-moon"></i>`
   } else {
     html.setAttribute('data-theme', 'dark');
+    iconTheme.innerHTML = `<i class="fa-regular fa-sun"></i>`
   }
 };
 
-// Adiciona um evento no botão de alternar tema
 document.querySelector('#theme').addEventListener('click', toggleTheme);

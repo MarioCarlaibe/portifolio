@@ -9,7 +9,7 @@
     transition: 0.5s;
 }
 .header nav ul li a:hover{
-    color: var(--Gray-100);
+    color: var(--Gray-50);
     background-color: var(--Gray-600);
 }
 .header .download:hover{
@@ -27,7 +27,7 @@
     flex-direction: column;
 }
 .header .hamburguer{
-    background-color: var(--Gray-950);
+    background-color: var(--Gray-900);
     position: relative;
     display: block;
     width: 30px;
@@ -37,7 +37,7 @@
 }
 .header .hamburguer:before,
 .header .hamburguer:after{
-    background-color: var(--Gray-950);
+    background-color: var(--Gray-900);
     content: "";
     display: block;
     width: 100%;

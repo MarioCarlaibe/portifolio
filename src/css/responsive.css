@@ -2,28 +2,26 @@
     body .header .menu{
         display: block;
     }
-
     body .header nav ul{
         display: none;
     }
-
     body .header input:checked ~ ul{
         display: block;
     }
-
     body .header nav{
         position: absolute;
         top: 8px;
         right: 20px;
         z-index: 1;
     }
-
     body .header nav ul{
         width: 200px;
-        background-color: var(--Gray-100);
+        background-color: var(--Gray-300);
         padding: 20px;
     }
-
+    body .header .download:hover{
+        background-color: var(--Gray-50);
+    }
     body .header nav ul a{
         display: block;
         padding: 20px;

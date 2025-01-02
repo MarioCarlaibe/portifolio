@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: "Inter", serif;
-    color: var(--Gray-600);
+    color: var(--Gray-800);
     background-color: var(--Gray-Default);
     display: flex;
     justify-content: center;
     overflow-x: hidden;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 main{
     width: 1440px;
@@ -31,10 +34,11 @@ main{
     justify-content: center;
     border-radius: 50%;
     transition: 0.5s;
+    color: var(--Gray-900);
 }
 .header div a i:hover{
     background-color: var(--Gray-600);
-    color: var(--Gray-100);
+    color: var(--Gray-50);
 }
 .header div h2{
     padding: 0 30px;
@@ -77,6 +81,7 @@ main{
 .container .location:hover{
     color: var(--Gray-100);
     background-color: var(--Gray-600);
+    transform: scale(1.1);
 }
 .container .links{
     display: flex;
@@ -86,14 +91,15 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 32px;
-    height: 32px;
+    width: 35px;
+    height: 35px;
     transition: 0.5s;
     border-radius: 5px;
 }
 .container .links i:hover{
     color: var(--Gray-100);
     background-color: var(--Gray-600);
+    transform: scale(1.1);
 }
 .container img{
     width: 280px;
@@ -194,13 +200,13 @@ main{
 }
 .works .work-left{
     opacity: 0;
-    transform: translateX(-300px);
-    transition: opacity 1.5s ease, transform 1.5s ease;
+    transform: translateX(-200px);
+    transition: opacity 1s ease, transform 1s ease;
 }
 .works .work-right{
     opacity: 0;
-    transform: translateX(300px);
-    transition: opacity 1.5s ease, transform 1.5s ease;
+    transform: translateX(200px);
+    transition: opacity 1s ease, transform 1s ease;
 }
 .works .work.show{
     opacity: 1;
@@ -260,7 +266,7 @@ main{
     
 }
 .skills .item.ativo p{
-    max-height: 240px;
+    max-height: 500px;
     opacity: 1;
     margin: 20px 0;
 }
@@ -315,13 +321,14 @@ main{
     border-radius: 5px;
     width: 35px;
     height: 35px;
-    font-size: 32px;
+    font-size: 24px;
     margin: 0 30px;
     transition: 0.5s;
 }
 .contact .links i:hover, .email a:hover{
     color: var(--Gray-50);
     background-color: var(--Gray-600);
+    transform: scale(1.1);
 }
 .directs{
     display: flex;
